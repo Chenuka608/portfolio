@@ -13,7 +13,7 @@ import Python from '../images/python.png';
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#2B0347] text-gray-300'>
+    <div name='skills' className='max-w[1000px] bg-[#2B0347] text-gray-300'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-5 flex flex-col justify-center w-full h-full pb-4'>
           <div className= "pt-12 pb-1">

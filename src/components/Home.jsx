@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div name='home' className="w-full h-screen bg-[#AC95C2]">
         {/* Container*/}
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full' >
+        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full sd:mt-40' >
 
         <div className='mb-8 md:mb-0 md:mr-8 '>
             <img src={CV} alt="Chenuka Sarathchandra" className='rounded-full w-48 h-48 object-cover' />
