@@ -4,6 +4,7 @@ import htmlcssjs from '../images/html.png';
 import java from '../images/javaL.png';
 import react from '../images/react.png';
 
+
 const handleViewProjectClick = (projectURL) => {
     window.open(projectURL, '_blank');
   };
@@ -52,6 +53,7 @@ const Work = () => {
         </div>
       </div>
     </div>
+    
   );
 }
 
