@@ -6,7 +6,7 @@ import LaptopVid from "../images/purple.mp4";
 
 const Home = () => {
   return (
-    <div className='relative w-full h-screen'>
+    <div name='home' className='relative w-full h-screen'>
       {/* Background video */}
       <video className='absolute top-0 left-0 w-full h-full object-cover z-0' autoPlay loop muted>
         <source src={LaptopVid} type='video/mp4' />
