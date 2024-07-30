@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CV from '../Assets/cv.pdf'
+import CV from '../Assets/cv.pdf';
 import {
   FaBars,
   FaTimes,
@@ -16,12 +16,12 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#671C9C] text-gray-300  z-50'>
+    <div className='fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#671C9C] text-gray-300 z-50'>
       <div>
         <img src={Logo} alt='Logo' style={{ width: '200px' }} />
       </div>
 
-      {/* menu */}
+      {/* Desktop Menu */}
       <ul className='hidden md:flex'>
         <li className='mr-10 cursor-pointer'>
           <Link to='home' smooth={true} duration={500} className="hover:border-b-2 hover:border-white hover:mb-2">
@@ -50,57 +50,49 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Hamburger */}
+      {/* Hamburger Icon */}
       <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       <ul
-        className={
-          !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#671C9C] flex flex-col justify-center items-center'
-        }
+        className={`fixed top-20 right-0 w-1/3 h-auto bg-[#4B266A]/70 flex flex-col justify-start items-start p-2 md:hidden ${nav ? '' : 'hidden'}`}
       >
-        <li className='py-6 text-4xl '>
+        <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
+        <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
 
-      {/* Social icons */}
+      {/* Social Icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#103A88]'>
             <a
               className='flex justify-between items-center w-full text-gray-300 px-1'
-               href='https://www.linkedin.com/in/chenuka-sarathchandra-353334266'
+              href='https://www.linkedin.com/in/chenuka-sarathchandra-353334266'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -108,7 +100,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4F0A82]'>
             <a
               className='flex justify-between items-center w-full text-gray-300 px-1'
-             href='https://github.com/Chenuka608'
+              href='https://github.com/Chenuka608'
             >
               Github <FaGithub size={30} />
             </a>
