@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`fixed top-20 right-0 w-1/3 h-auto bg-[#4B266A]/70 flex flex-col justify-start items-start p-2 md:hidden ${nav ? '' : 'hidden'}`}
+        className={`fixed top-12 right-0 w-1/3 h-auto bg-[#4B266A]/70 flex flex-col justify-start items-start p-2 md:hidden ${nav ? '' : 'hidden'}`}
       >
         <li className='py-3 text-2xl w-full'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
