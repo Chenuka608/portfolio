@@ -3,6 +3,7 @@ import Python from '../images/Python-Logo.png';
 import htmlcssjs from '../images/html.png';
 import java from '../images/javaL.png';
 import react from '../images/react.png';
+import tailwind from '../images/tailwind.png';
 
 
 const handleViewProjectClick = (projectURL) => {
@@ -44,13 +45,25 @@ const Work = () => {
           </div>
         </div>
         <div className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div relative'>
-          {/* Project Image */}
-          <img src={react} alt='Project 4' className='rounded-md  object-cover max-w-[300px] max-h-[200px]' />
-          {/* Overlay */}
-          <div className='absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300 hover:scale-102'>
-            <button className='text-white px-4 py-2 border border-white rounded-md'onClick={() => handleViewProjectClick('https://github.com/Chenuka608/sdgpprojectv2')}>View Internship Prep WebApp</button>
-          </div>
-        </div>
+  {/* Project Image */}
+  <img src={react} alt='Project 4' className='rounded-md object-cover max-w-[300px] max-h-[200px]' />
+  
+  {/* Overlay */}
+  <div className='absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300 hover:scale-102'>
+    <div className='flex flex-row space-x-4'>
+      <button className='text-white px-4 py-2 border border-white rounded-md' onClick={() => handleViewProjectClick('https://github.com/Chenuka608/sdgpprojectv2')}>
+        View Internship Prep WebApp
+      </button>
+      <button className='text-white px-4 py-2 border border-white rounded-md' onClick={() => handleViewProjectClick('https://github.com/Chenuka608/FYP-Frontend')}>
+        View ShieldComms Frontend
+      </button>
+      <button className='text-white px-4 py-2 border border-white rounded-md' onClick={() => handleViewProjectClick('https://github.com/Chenuka608/portfolio')}>
+        My Portfolio Site
+      </button>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
     

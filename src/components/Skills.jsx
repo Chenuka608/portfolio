@@ -7,9 +7,12 @@ import ReactImg from '../images/react.png';
 import Node from '../images/node.png';
 import GitHub from '../images/github.png';
 import Tailwind from '../images/tailwind.png';
-import Mongo from '../images/mongo.png';
+import Mongo from '../images/mongo.png';        
 import Java from '../images/java.png';
 import Python from '../images/python.png';
+import PS from '../images/ps.jpg';
+import moavi from '../images/moavi.png';
+import Pr from '../images/Pr.png';
 
 const Skills = () => {
   return (
@@ -18,7 +21,7 @@ const Skills = () => {
       <div className='max-w-[1000px] mx-auto p-5 flex flex-col justify-center w-full h-full pb-4'>
           <div className= "pt-12 pb-1">
               <p className='text-4xl font-bold inline border-b-4 border-white'>Skills</p>
-              <p className='py-4'> These are the technologies I've worked with :</p>
+              <p className='py-4'> My Tech Stack :</p>
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
@@ -61,6 +64,27 @@ const Skills = () => {
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                   <img className='w-20 mx-auto' src={Python} alt="HTML icon" />
                   <p className='my-4'>PYTHON</p>
+              </div>
+          </div>
+
+          {/* Editing Stack Heading */}
+          <div className="pt-8 pb-1">
+              <p className='text-4xl font-bold inline border-b-4 border-white'>Editing Stack</p>
+              <p className='py-4'> My Editing Tools :</p>
+          </div>
+
+          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={PS} alt="Photoshop icon" />
+                  <p className='my-4'>PHOTOSHOP</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={moavi} alt="Movavi Editor icon" />
+                  <p className='my-4'>MOVAVI EDITOR</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Pr} alt="Premiere Pro icon" />
+                  <p className='my-4'>PREMIERE PRO</p>
               </div>
           </div>
       </div>

@@ -57,29 +57,31 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`fixed top-12 right-0 w-1/3 h-auto bg-[#4B266A]/70 flex flex-col justify-start items-start p-2 md:hidden ${nav ? '' : 'hidden'}`}
+        className={`fixed top-0 left-0 w-1/2 h-full bg-[#4B266A]/70 flex flex-col justify-start items-start p-6 transition-transform duration-300 ease-in-out md:hidden ${
+          nav ? 'translate-x-0' : '-translate-x-full'
+        }`}
       >
-        <li className='py-3 text-2xl w-full'>
+        <li className='py-6 text-2xl w-full'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-3 text-2xl w-full'>
+        <li className='py-6 text-2xl w-full'>
           <Link onClick={handleClick} to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='py-3 text-2xl w-full'>
+        <li className='py-6 text-2xl w-full'>
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='py-3 text-2xl w-full'>
+        <li className='py-6 text-2xl w-full'>
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-3 text-2xl w-full'>
+        <li className='py-6 text-2xl w-full'>
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
           </Link>
