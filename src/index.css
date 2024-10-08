@@ -4,35 +4,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
 @layer base {
+  body {
+    @apply font-[Raleway];
+  }
+
+  /* Adjust font size on smaller screens */
+  @media (max-width: 640px) {
     body {
-        @apply font-[Raleway];
+      font-size: 0.875rem; /* Equivalent to text-sm */
     }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
+  }
+
+  /* Larger screens can have default or larger font sizes */
+  @media (min-width: 640px) {
+    body {
+      font-size: 1rem; /* Equivalent to text-base */
     }
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
 }
 
 .content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
 }
 
 .content-div:hover {
-    background-image: linear-gradient(
-        to right ,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)   
-    )!important;
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  ) !important;
 }
